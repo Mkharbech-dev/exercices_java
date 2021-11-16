@@ -2,6 +2,7 @@ package afpa;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class demo {
 	
@@ -121,14 +122,28 @@ public class demo {
 			 }
 		  
 //		  ************************//Exercice année est bissextille ou pas:	**************
-		  
+	
+		  	
 		  	int y = 2005;
 	        if((y % 4 == 0 && y % 100 > 0) || (y % 400 == 0)) {
 	        	System.out.println("L'année "+ y +" est une année bissextile");
 	        }else {
 	        	System.out.println("L'année "+ y +" n'est pas une année bissextile");
 	        }
-//	        ********************************************************************
+	        
+	       
+       //	**************************************************************
+	        
+		  	System.out.println("saisir un nombre");
+		  	Scanner salah = new Scanner(System.in);
+		  	int choix = salah.nextInt();
+		  	System.out.println("voici ton choix : "+ choix);
+	
+			
+	    	
+	    	
+	    	
+	    	
 	}
 
 }
