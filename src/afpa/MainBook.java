@@ -38,10 +38,12 @@ class MainBook {
 //	    salah.close();
 	    
 //	    ****************************exercices livres*****************
-		  // Demande à l'utilisateur de saisir le nbr de livre souhaité
-		  System.out.println("saisir un nombre livre!");
+		  // Demande à l'utilisateur de saisir le nbr de livre souhaité:
+		
+		  		System.out.println("saisir un nombre livre!");
 		  	Scanner nbr = new Scanner(System.in);
 		    int nombreLivre = nbr.nextInt();
+		    
 		    // Instanciation d'un tableau tabLivre de la classe BOOK en détérminat
 		    // la taille au nombre saisi par l'utilisateur
 		    Book [] tabLivre = new Book [nombreLivre];
@@ -61,14 +63,14 @@ class MainBook {
 		    	tabLivre[i] = new Book (title,autor,price);
 		    }
 		    // Initialiser un total à zero
-		    
 		    int total = 0;
+		    
 		    for ( int i =0; i< tabLivre.length ; i++) {
 		    	System.out.println("le titre du livre "+(i+1)+" est " + tabLivre[i].getTitle()+
 		    	" son auteur est "+tabLivre[i].getAutor()+ " et son prix est "+ tabLivre[i].getPrice() );
 		    	total += tabLivre[i].getPrice();
 		    }
-		     System.out.println("le total des prix des livres est "+ total);
+		    System.out.println("le total des prix des livres est "+ total);
 	    
 	  }
 	}
