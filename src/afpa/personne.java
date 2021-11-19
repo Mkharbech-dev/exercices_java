@@ -1,6 +1,6 @@
 package afpa;
 
-public class Personne {
+public class personne {
 	
 	
 //	public Personne() {
@@ -8,7 +8,7 @@ public class Personne {
 //		// TODO Auto-generated constructor stub
 //	}
 //	
-	public Personne(String nom, String prenom) {
+	public personne(String nom, String prenom) {
 		super();
 		this.setNom(nom);
 		this.setPrenom(prenom);
@@ -42,7 +42,7 @@ public class Personne {
 	
 	 // tant que getNom est private donc je peux l'acceder au sein de la classe meme.
 	public static void main(String[] args){
-		 Personne cda = new Personne("mkharbech", "salah");
+		 personne cda = new personne("mkharbech", "salah");
 		 System.out.println(cda.getNom());
 	}
 	

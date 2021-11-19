@@ -83,34 +83,7 @@ class main {
 // 	     
 // 	     System.out.println(cda.addition(50,30));
  	     
-		  Livre livre = new Livre();
-		  System.out.println(livre);
-//		  *********************************************************
-		  int count = 0;
-		  System.out.println("saisir un nombre");
-		  Scanner nbr = new Scanner(System.in);
-		  int nombre = nbr.nextInt();
-		  System.out.println("Vous avez saisi "+ nombre);
-		  ArrayList <String> tab = new ArrayList<>();
-		  for(int i =0; i<nombre;i++) {
-			  System.out.println("saisir un titre");
-			  	Scanner title = new Scanner(System.in);
-			    String titre = title.nextLine();
-			   
-			    System.out.println("saisir un auteur");
-			  	Scanner aut = new Scanner(System.in);
-			    String auteur = aut.next();
-			   
-			    System.out.println("saisir un prix");
-			  	Scanner price = new Scanner(System.in);
-			    int prix = price.nextInt();
-			    count = prix+count;
-			    tab.add(titre);
-			    
-		  }
-		   System.out.println(tab);
-		   System.out.println("le nombre de livre est "+ tab.size());
-		   System.out.println("le total de prix est "+ count);
+		
 		  
 		
 //		  **********************************************
