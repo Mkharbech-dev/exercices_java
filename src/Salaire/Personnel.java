@@ -1,7 +1,7 @@
 package Salaire;
 
 public class Personnel {
-	int identifiant = 0;
+	int identifiant ;
 	private String nom;
 	private String prenom;
 	private String email;
@@ -13,7 +13,6 @@ public class Personnel {
 	//constructeur
 	public Personnel(String nom, String prenom, String email, String tel, Double salaire) {
 		super();
-		this.identifiant = identifiant++;
 		this.nom = nom;
 		this.prenom = prenom;
 		this.email = email;

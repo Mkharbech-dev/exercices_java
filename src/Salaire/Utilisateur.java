@@ -25,7 +25,7 @@ public class Utilisateur extends Personnel {
 	}
 
 
-	public String afficher() {
+	public String toString() {
 			return super.afficher()+ "  "+ role.getLibelle();
 	 }
  
@@ -37,8 +37,5 @@ public class Utilisateur extends Personnel {
  		}else {
  			return super.getSalaire();
  		}
- 		
  	}
- 
- 
 }
