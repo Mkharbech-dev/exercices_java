@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 class MainBook {
 	
-	  private static Scanner titre;
+	private static Scanner titre;
 	private static Scanner auteur;
 	private static Scanner prix;
 
