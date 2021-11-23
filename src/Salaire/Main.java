@@ -50,7 +50,7 @@ public class Main {
 		listUser.add(malak);
 		listUser.add(sara);
 		listUser.add(yamna);
-		System.out.println(listUser);
+		//System.out.println(listUser);
 		// Parcourir le tableau en incrementant l'identifiant
 		System.out.println("la liste des utilisateurs :");
 		for (int i=0; i < listUser.size(); i++) {
