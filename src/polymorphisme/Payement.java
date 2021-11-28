@@ -19,6 +19,8 @@ public class Payement {
 		for(Salarier item: salaries) {
 			item.afficherSalaire();
 		}
+		
+		
 
 	}
 

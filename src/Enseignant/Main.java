@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class Main {
 
-	@SuppressWarnings("unlikely-arg-type")
+	
 	public static void main(String[] args) {
 		Specialite java = new Specialite("JE","JAVA/JEE");
 		Specialite html_css = new Specialite("HC","HTML/CSS");
@@ -13,13 +13,13 @@ public class Main {
 		Specialite javascript = new Specialite("JS","JAVASCRIPT");
 		Specialite php = new Specialite("PHP","PHP");
 		
-		Enseingant moussa = new Enseingant("camara", "moussa", "camara@yahoo.fr",java);
+		Enseignant moussa = new Enseignant("camara", "moussa", "camara@yahoo.fr",java);
 		
-		Enseingant imane = new Enseingant("dupont", "imane", "imane@yahoo.fr",java);
+		Enseignant imane = new Enseignant("dupont", "imane", "imane@yahoo.fr",java);
 		
-		Enseingant sarah = new Enseingant("dupont", "sarah", "sarah_12@yahoo.fr",php);
+		Enseignant sarah = new Enseignant("dupont", "sarah", "sarah_12@yahoo.fr",php);
 		
-		Enseingant malak = new Enseingant("dupont", "malak", "malak@yahoo.fr",javascript);
+		Enseignant malak = new Enseignant("dupont", "malak", "malak@yahoo.fr",javascript);
 	
 		ArrayList<Specialite> tab_sp = new ArrayList<Specialite>();
 		tab_sp.add(java);
@@ -32,17 +32,32 @@ public class Main {
 		tab_sp.forEach(item->System.out.println(item.getLibelle()));
 		
 		
-		ArrayList<Enseingant> tab = new ArrayList<Enseingant>();
+		ArrayList<Enseignant> tab = new ArrayList<Enseignant>();
 		tab.add(moussa);
 		tab.add(imane);
 		tab.add(sarah);
 		tab.add(malak);
 		
-		System.out.println("***************************************************");
+		System.out.println("*******************************************************************************");
 		
-		tab.forEach(item->System.out.println(item));
+		//tab.forEach(item->System.out.println(item));
 		
-		
+		for(Specialite spec : tab_sp) {
+			System.out.println(spec.getLibelle()+"\n");
+			boolean isEmpty = true;
+			for(Enseignant ens : tab) {
+				
+				
+				if(ens.getSpecialite().getLibelle().equalsIgnoreCase(spec.getLibelle())) {
+					System.out.println("\t" +ens +"\n");
+					isEmpty = false;
+				} 
+			}
+			
+			if(isEmpty) {
+				System.out.println(" \t Aucun enseignant pour cette spécialité "+spec.getLibelle()+"\n");
+			}
+		}
 		
 //		System.out.println("java : ");
 //		for(int i = 0; i<tab.size();i++) {

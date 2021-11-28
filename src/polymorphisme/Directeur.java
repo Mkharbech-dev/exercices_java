@@ -6,8 +6,4 @@ public class Directeur extends Salarier {
 		super(nom);
 		salaire = (double) 15000;
 	}
-
-	
-	
-
 }

@@ -16,3 +16,4 @@ public class Salarier {
 		System.out.println("Le salaire de "+this+" est "+ salaire);
 	}
 }
+

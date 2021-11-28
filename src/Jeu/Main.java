@@ -21,7 +21,7 @@ public class Main {
 		mario.porterArme(marteau);
 		System.out.println(mario);
 		
-		System.out.println("********************************************************************************************");
+		System.out.println("************************lors de l'attaque************************************************************");
 		//Lors de l'attaque
 		zelda.attaquer(mario, arc);
 		System.out.println(zelda);
@@ -36,20 +36,19 @@ public class Main {
 		}else {
 			System.out.println(" match null ");
 		}
-		 System.out.println("***********************************************************************************************");
+		 System.out.println("\t***********************match contre zelda1 contre mario1***************************************************\n");
 		 
-		 	Joueur zelda1 = new Joueur("Zelda");
+		 	Joueur zelda1 = new Joueur("Zelda1");
 			System.out.println(zelda1);
 			zelda1.porterArme(Excalibur);
 			
 			System.out.println("********************************************************************************************");
 			
-			Joueur mario1 = new Joueur("Mario");
+			Joueur mario1 = new Joueur("Mario1");
 			System.out.println(mario1);
 			mario1.porterArme(marteau);
 			System.out.println("******************************apres l'attaque***********************************************");
 			
-		
 			while(zelda1.santé!=0 && mario1.santé!=0) {
 				
 				zelda.attaquer(mario1, arc);
@@ -67,7 +66,7 @@ public class Main {
 				}else {
 					System.out.println(" match null ");
 				}
-				System.out.println("**********************Résultat final**************************************************");
+				System.out.println("************************************************************************");
 				if(mario1.santé == 0 ) {
 					System.out.println(zelda1.nom+ " a gagné ");
 					System.out.println(mario1.nom+ " a été tué ");

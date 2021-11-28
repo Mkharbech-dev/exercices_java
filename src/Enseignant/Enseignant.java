@@ -1,12 +1,12 @@
 package Enseignant;
 
-public class Enseingant {
+public class Enseignant {
 		private String nom;
 		private String prenom;
 		private String email;
 		private Specialite specialite;
 		//Constructeur:
-		public Enseingant(String nom, String prenom, String email, Specialite specialite) {
+		public Enseignant(String nom, String prenom, String email, Specialite specialite) {
 			super();
 			this.nom = nom;
 			this.prenom = prenom;
