@@ -3,3 +3,7 @@
 /Main.class
 /Client.class
 /ClientDao.class
+/Article.class
+/ArticleDao.class
+/IDao.class
+/Etudiant.class

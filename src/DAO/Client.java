@@ -4,14 +4,14 @@ public class Client {
 	private String nom;
 	private String prenom;
 	private int id;
-	//Constructeur
+	//Constructeur avec id
 	public Client(int id, String nom, String prenom) {
 		super();
 		this.nom = nom;
 		this.prenom = prenom;
 		this.id = id;
 	}
-	
+	//Constructeur sans id
 	public Client(String nom, String prenom) {
 		super();
 		this.nom = nom;

@@ -8,26 +8,40 @@ public class Main {
 		// TODO Auto-generated method stub
 		//GetConnection.getConnection();
 		//Creer un nouveau client
-		ClientDao salah = new ClientDao();
-		//salah.create("Mkharbech", "salah");
+		//ClientDao client = new ClientDao();
+		
+//		client.create(new Client("mkharbech", "imane"));
+//		client.create(new Client("mkharbech", "sara"));
+//		client.create(new Client("mkharbech", "malak"));
 		
 		
-		//Afficher un nouveau client
+		ArticleDao article = new ArticleDao();
 		
-		List<Client> clients = salah.read();
-		
-		for(Client item : clients) {
-			System.out.println(item.getId()+" "+item.getNom()+" "+item.getPrenom());
-			
-		}
-		
-		//Update client
-		
-		Client afpa = new Client("marrakech", "maroc");
-		
-		salah.update(afpa, 58);
-		
-		//Delete
-				//salah.delete(56);		
-		}	
+		article.create(new Article("la france", "salah"));
+		article.create(new Article("la suisse", "malak"));
+		article.create(new Article("la belgique", "imane"));
+	
+		//***************************************premiere facon******************************************
+//		ClientDao salah = new ClientDao();
+//		salah.create("Mkharbech", "sara");
+//		
+//		
+//		//Afficher un nouveau client
+//		
+//		List<Client> clients = salah.read();
+//		
+//		for(Client item : clients) {
+//			System.out.println(item.getId()+" "+item.getNom()+" "+item.getPrenom());
+//			
+//		}
+//		
+//		//Update client
+//		
+//		Client afpa = new Client("marrakech", "maroc");
+//		
+//		salah.update(afpa, 58);
+//		
+//		//Delete
+//				salah.delete(56);		
+	}	
 }
